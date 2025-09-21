@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Engine {
+public:
+    Engine() {
+        cout << "Engine started\n";
+    }
+};
+
+class Wheels {
+public:
+    Wheels() {
+        cout << "Wheels ready\n";
+    }
+};
+
+class Car : public Engine, public Wheels {
+public:
+    Car() {
+        cout << "Car is ready\n";
+    }
+};
+
+int main() {
+    Car c;
+    return 0;
+}
