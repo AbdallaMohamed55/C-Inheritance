@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Engine {
+public:
+    void showEngine() {
+        cout << "This is Engine\n";
+    }
+};
+
+class Vehicle {
+public:
+    void showVehicle() {
+        cout << "This is Vehicle\n";
+    }
+};
+
+class Car : public Engine, public Vehicle {
+public:
+    void showCar() {
+        cout << "This is Car\n";
+    }
+};
+
+class SportsCar : public Car {
+public:
+    void showSportsCar() {
+        cout << "This is Sports Car\n";
+    }
+};
+
+int main() {
+    SportsCar sc;
+    sc.showEngine();
+    sc.showVehicle();
+    sc.showCar();
+    sc.showSportsCar();
+    return 0;
+}
