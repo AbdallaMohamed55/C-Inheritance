@@ -6,7 +6,7 @@ To study and implement Inheritance
 
 To study and implement different types of inheritance in C++ (Single, Multiple, Multilevel, Hierarchical, Hybrid).
 
-# Thoery 
+# Theory  
 
 Inheritance is the mechanism by which one class (derived/child) acquires the properties and behaviors of another class (base/parent). It improves code reusability and represents real-world relationships.
 
