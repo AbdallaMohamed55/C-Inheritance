@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Vehicle {
+public:
+    void type() {
+        cout << "This is a Vehicle\n";
+    }
+};
+
+class Car : public Vehicle {
+public:
+    void carInfo() {
+        cout << "This is a Car\n";
+    }
+};
+
+class Bike : public Vehicle {
+public:
+    void bikeInfo() {
+        cout << "This is a Bike\n";
+    }
+};
+
+int main() {
+    Car c;
+    Bike b;
+    c.type();
+    c.carInfo();
+    b.type();
+    b.bikeInfo();
+    return 0;
+}
